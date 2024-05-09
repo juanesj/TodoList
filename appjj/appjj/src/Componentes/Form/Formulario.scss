@@ -1,0 +1,55 @@
+// src/components/Form/form.scss
+
+.form-group {
+    margin-bottom: 20px; 
+    
+}
+
+.form-control {
+    border-radius: 8px; 
+    border: 1px solid #ced4da; // Mantener un borde sutil
+    padding: 12px 15px; // Padding más generoso para mayor facilidad de escritura
+    font-size: 1rem; // Asegurarse que el tamaño de la fuente sea legible
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; // Suavizar la transición
+
+    &:focus {
+        border-color: #80bdff; // Resaltar más el foco con un color azul claro
+        box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); // Añadir una sombra de foco para mayor claridad
+        outline: none; // Eliminar el outline por defecto para estilos más limpios
+    }
+}
+
+.form-label {
+    text-align: right; 
+    font-weight: 600; 
+    color: #333;
+    font-size: 1.1rem; 
+    
+}
+
+.btn-primary {
+    background-color: #007bff; // Color principal azul
+    border-color: #007bff; // Asegurar que el borde coincida
+    padding: 10px 25px; // Padding más generoso para un botón más accesible
+    border-radius: 8px; // Bordes redondeados
+    font-size: 1.1rem; // Tamaño de fuente más grande para mejor lectura
+    font-weight: 500; // Peso de la fuente semibold
+    transition: background-color 0.3s ease, color 0.3s ease; // Transiciones para interacciones más suaves
+
+    &:hover, &:focus {
+        background-color: #0056b3; // Oscurecer el botón al pasar el mouse o enfocar para retroalimentación
+        border-color: #004085; // Cambiar también el color del borde
+        box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); // Sutil sombra para destacar
+    }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+    .form-control, .btn-primary {
+        padding: 10px 15px; // Ajustar el padding para dispositivos más pequeños
+    }
+
+    .btn-primary {
+        width: 100%; // Hacer que el botón ocupe el ancho completo en dispositivos móviles
+    }
+}

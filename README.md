@@ -23,3 +23,21 @@ Para configurar el proyecto localmente, sigue estos pasos:
 1. Clona el repositorio:
    ```bash
    git clone https://github.com/tuusuario/todolist-app.git
+
+
+
+   # Todo List Application
+
+## Descripción
+Esta es una aplicación de lista de tareas (To-Do List) construida con React para el frontend y Node.js para el backend. Docker se utiliza para contenedores y Nginx para servir la aplicación React y manejar las solicitudes al backend.
+
+## Requisitos
+- [Docker](https://www.docker.com/products/docker-desktop) instalado en tu máquina
+
+## Configuración y Ejecución
+
+### Clonar el Repositorio
+```sh
+git clone https://github.com/tu-usuario/tu-repositorio.git
+cd tu-repositorio
+
